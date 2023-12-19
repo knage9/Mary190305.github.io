@@ -1,0 +1,780 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 515px;
+}
+
+@font-face{
+    font-family: 'Donpoligrafbum-Bold';
+    src: url(./Donpoligrafbum-Bold.woff) format('woff'),
+         url(./Donpoligrafbum-Bold.woff2) format('woff2');
+}
+@font-face{
+    font-family: 'Mikar';
+    src: url(./Mikar.woff) format('woff'),
+         url(./Mikar.woff2) format('woff2');
+}
+
+@font-face{
+    font-family: 'Xenotrcyrillic';
+    src: url(Xenotroncyrillic.woff) format('woff'),
+         url(Xenotroncyrillic.woff2) format('woff2');     
+}
+
+#block1, #block2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#block1{
+    background-image: url("Фон3.jpg");
+    margin: auto;
+}
+#block2{
+    background: linear-gradient(to top, #000000, #2A1B3D);
+    opacity: 0.9; /*мб отредактировать*/
+    margin: auto;
+}
+.main{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header{
+    z-index: 11;
+}
+.menutext{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-left: -3%;
+}
+
+.zvezdec{
+    font-family: 'Donpoligrafbum-Bold';
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+}
+
+.menutext2 {
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menutext2 p{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 1%;
+    background-color: rgba(30, 20, 44, 0.7);
+    border-radius: 50px;
+    margin-bottom: 1%;
+}
+
+p a{
+    text-decoration: none;
+    color:#FAF68E;
+}
+
+.menutext2 p:nth-of-type(1){
+    padding-left: 4.7vw;
+    padding-right: 4.7vw;
+}
+.menutext2 p:nth-of-type(2){
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+}
+.menutext2 p:nth-of-type(3){
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #FAF68E;
+}
+.menutext2 p:nth-of-type(1), .menutext2 p:nth-of-type(2){
+    margin-right: 5vw;
+}
+
+.menutext2 :hover{
+    background-color: whitesmoke;
+    color:#2A1B3D;
+    border-radius: 50px;
+}
+
+.yellow{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    z-index: 10;
+    margin-top: 7%;
+}
+
+.yellow p{
+    font-size:50px;
+    font-family: 'Donpoligrafbum-Bold';
+    color: #FAF68E;
+    letter-spacing: 15px;
+    padding-right: 20px;
+    margin-top: -2%;
+}
+
+.yellow img{
+    max-width: 5%;
+    margin: -3% 1% 2% 1%;
+}
+
+.do_u_wanna_know{
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-top: -2%;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 2.5vw;
+    font-size: 20px;
+}
+
+.group_elements{
+    display: flex;
+    position: relative;
+    z-index: 11;
+    border-radius: 25px;
+    background-color: rgba(209, 215, 224, 0.40);
+    font-family: 'Xenotrcyrillic';
+    margin-top: 50px;
+}
+
+.stars{
+    position: absolute;
+}
+
+.stars :first-child{
+    top: -1.5vw;
+    left: 77vw;
+    max-width: 100px;
+}
+
+
+.stars img:nth-of-type(2){
+    top: 9vw;
+    left: 22vw;
+    max-width: 100px;
+}
+
+.variants p:first-of-type, .variants p:last-of-type{
+    font-family: 'Donpoligrafbum-Bold';
+    color: black;
+    background-color:#FAF68E;
+    border: solid 9px #2A1B3D;
+    font-weight: 100;
+    border-radius: 50px;
+    padding: 5px;
+    width: fit-content;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.variants{
+    padding: 40px 20px 20px 70px;
+    font-family: 'Donpoligrafbum-Bold';
+    color:whitesmoke;
+    font-weight: 500;
+    font-size:40px;
+    width: max-content;
+    text-align: center;
+}
+
+.variants p{
+    margin: 15px 0px 15px 0px;
+}
+
+.variants img{
+    position: absolute;
+    width: 75px;
+    top:-20px;
+    left: -20px;
+}
+
+.verdict{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.verdict p{
+    font-family: 'Xenotrcyrillic';
+    font-size: 55px;
+    text-decoration: underline;
+    color:#FFC2C2;
+}
+
+.basement{                          /*совместимость */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(69, 54, 78, 0.8);
+    z-index: 10;
+    margin-left: -6%;
+    margin-right: -6%;
+    padding: 40px;
+}
+.basement2{
+    display: flex;
+    flex-direction: row;
+}
+.basementtext1{
+    margin: auto;
+    margin-left: 2%;
+}
+.basementtext1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.basementtext1 p:last-child, .basementtext1 p:nth-of-type(2){
+    margin-top: 5%;
+}
+.basementtext2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: 2%;
+    max-width: 50%;
+}
+.basementtext1 a{
+    color: aliceblue;
+}
+.basementtext1{
+    margin: auto;
+    margin-left: 2%;
+}
+.texttext{
+    white-space: nowrap;
+    margin: auto;
+    font-size: 20px;
+    margin-right: 10%;
+}
+.texttext p:first-child{
+    margin-bottom: 10%;
+}
+.icon{
+    font-size: 3vw;
+    margin: auto;
+}
+
+.end{
+    text-align: center;
+    font-family: 'Donpoligrafbum-Bold';
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: rgba(30, 20, 44, 0.5);
+}
+
+@media(min-width:1700px){
+    .yellow{                          /*совместимость(отступ) */
+        margin-top: 5%;
+    }
+    .yellow img{                          /*фото звездочек*/
+        margin-top: -2.5%;
+    }
+    .yellow img:nth-of-type(2){
+        margin-left: -1.5%;
+    }
+    .yellow p{                          /*совместимость */
+        font-size: 76px;
+    }
+    .stars img:nth-of-type(2){
+        top: 6vw;
+    }
+    .yellow p:nth-child(2):nth-of-type(2){
+        font-size: 80px;                          /*плюс */
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        border-radius: 100px;
+        font-size: 45px;
+        padding: 15px 20px;
+    }
+}
+
+@media(max-width:1700px){
+    .yellow{                        /*совместимость(отступ) */
+        margin-top: 4%;
+        margin-left: -5%;
+    }
+    .yellow img{                          /*фото звездочек*/
+        margin-top: -3%;
+    }
+    .yellow img:nth-of-type(2){
+        margin-left: -1%;
+    }
+    .stars img:nth-of-type(2){
+        top: 8vw;
+    }
+    .yellow p{                       /*совместимость */
+        font-size: 58px;
+        letter-spacing: 10px;
+    }
+    .yellow p:nth-child(2):nth-of-type(2){
+        font-size: 60px;                          /*плюс */
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        border-radius: 70px;
+        font-size: 35px;
+        padding: 10px 20px;
+    }
+}
+
+@media(max-width: 1350px){
+    .variants p{
+        font-size: 30px;                          /*плюс*/
+    }
+    .variants p:first-of-type, .variants p:last-of-type{
+        font-size: 20px;                          /*звездец+*/
+    }
+    .verdict p{
+        font-size: 50px;
+    }
+    .stars img{
+        width:60px
+    }
+    .yellow{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .yellow p{                          /*совместимость */
+        font-size: 50px;
+        letter-spacing: 10px; 
+    }
+
+    .yellow img{                          /*фото звездочек*/
+        margin-top: -3%;
+    }
+    .yellow p:nth-child(2):nth-of-type(2){
+        font-size: 60px;                          /*плюс */
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        border-radius: 70px;
+        font-size: 35px;
+        padding: 7px 20px;
+    }
+    .yellow img:nth-of-type(2){
+        margin-left:-1%;
+    }
+    .end{
+        font-size: 19px;
+    }
+}
+
+
+@media(max-width: 1220px){
+    .yellow p{                          /*совместимость */
+        font-size: 42px;
+        letter-spacing: 10px;
+    }
+    .yellow img{                          /*фото звездочек*/
+        margin-top: -3%;
+    }
+    .yellow img :nth-of-type(2){
+        margin-right: 1%;
+    }
+    .do_u_wanna_know{
+        font-size: 17px;
+    }
+    .yellow p:nth-child(2):nth-of-type(2){
+        font-size: 50px;                          /*плюс */
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        border-radius: 70px;
+        font-size: 30px;
+        padding: 5px 15px;
+    }
+    .menutext2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .zvezdec{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .menutext2 p{
+        border-radius: 10px;
+        text-align: center;
+    }
+    .menutext2 p:nth-of-type(1){
+        width: 62%;
+    }
+    .menutext2 p:nth-of-type(2){
+        width: 55.5%;
+    }
+    .basementtext1 p{
+        font-size: 22.5px;
+    }
+    .texttext{
+        font-size: 17.5px;
+    }
+    .end{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1100px){
+    .variants a img{
+        width: 60px;
+    }
+    .variants p{
+        font-size: 25px;
+    }
+    .variants p:first-of-type, .variants p:last-of-type{
+        font-size: 18px;                          /*звездец+*/
+    }
+    .verdict p{
+        font-size: 45px;
+    }
+    .stars img{
+        width: 50px;
+    }
+    .stars :first-of-type{
+        margin-left: -2vw;
+    }
+    .stars :last-of-type{
+        margin-top: 2vw;
+    }
+    .yellow p{                          /*совместимость */
+        font-size: 37px;
+    }
+    .yellow p:nth-child(2):nth-of-type(2){
+        font-size: 40px;                          /*плюс */
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        border-radius: 70px;
+        font-size: 25px;
+        padding: 5px 10px;
+    }
+    .yellow img:nth-of-type(2){
+        margin-left:-3%;
+    }
+    .basementtext1 p{
+        font-size: 20px;
+    }
+    .texttext{
+        font-size: 15px;
+    }
+    .end{
+        font-size: 17px;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 4%;
+    }
+}
+
+@media(max-width:980px){
+    .verdict p{
+        font-size: 35px;
+    }
+    .stars :first-of-type{
+        margin-left: -4vw;
+    }
+    .stars :last-of-type{
+        margin-top: 2vw;
+    }
+    .yellow p{                          /*совместимость */
+        font-size: 30px;
+    }
+    .do_u_wanna_know p{
+        font-size: 15px ;
+    }
+    .choice{
+        padding-top: 20px;
+    }
+    .yellow p:nth-child(2):nth-of-type(2){
+        font-size: 35px;
+        font-weight: 300;                          /*плюс */
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        border-radius: 70px;
+        font-size: 20px;
+        padding: 5px 7px;
+    }
+    .basementtext1 p{
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .basement{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .texttext{
+        font-size: 13px;
+    }
+    .end{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 860px){
+    .menutext2 p:nth-of-type(1){
+        width: 68%;
+    }
+    .menutext2 p:nth-of-type(2){
+        width: 62%;
+    }
+    .variants {
+        padding-right: 20px;
+    }
+    .stars :first-of-type{
+        margin-left: -7.5vw;
+        margin-bottom: 2vw;
+    }
+    .stars :last-of-type{
+        margin-top: 4vw;
+        margin-left: 4vw;
+    }
+    .verdict p{
+        padding-right: 40px;
+        font-size: 25px;
+    }
+    .yellow p:nth-child(2):nth-of-type(2){
+        font-size: 35px;
+        font-weight: 270;    
+        margin-top:-1%;  
+        margin-left: 20px;                    /*плюс */
+    }
+    .yellow p{
+        font-size: 28px;
+        letter-spacing: 10px;
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        border-radius: 70px;
+        font-size: 17px;
+        padding: 4px 6px;
+        letter-spacing: 3px;
+    }
+    .yellow img:nth-of-type(2){
+        margin-left:-3%;
+    }
+    .menutext2 p:nth-of-type(1){
+        width: 68%;
+    }
+    .menutext2 p:nth-of-type(2){
+        width: 62%;
+    }
+    .do_u_wanna_know p:first-child{
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+    .do_u_wanna_know p:last-child{
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+    .basementtext1 p{
+        font-size: 17.5px;
+    }
+    .basementtext1 p{
+        font-size: 15px;
+    }
+    .texttext{
+        font-size: 12.5px;
+    }
+    .end{
+        margin-top: 5%;
+    }
+}
+
+@media(max-width: 740px){
+    .zvezdec{
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+    .yellow img{                          /*фото звездочек*/
+        margin-top: -3%;
+    }
+    .yellow img:nth-of-type(2){
+        margin-left:-4%;
+    }
+    .verdict p{
+        font-size: 20px;
+    }
+    .stars{
+        display: flex;
+        justify-content: center;
+    }
+    .stars :first-of-type{
+        margin-left: -31vw;
+    }
+    .stars :last-of-type{
+        margin-left: 24vw;
+        margin-top: 7vw;
+    }
+    .yellow p{
+        font-size: 25px;
+        letter-spacing: 8px;
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        margin-top: -45px;
+    }
+    .yellow p:nth-child(2):nth-of-type(2){
+        font-size: 30px;
+        font-weight: 250;   
+        margin-left: 15px;
+        margin-top: -5px;  
+        margin-top: -40px;                     /*плюс */
+    }
+    
+    .basementtext1 p{
+        font-size: 14px;
+    }
+    .texttext{
+        font-size: 11px;
+    }
+    .end{
+        margin-top: 5%;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 620px){
+    .zvezdec{
+        margin: auto;
+    }
+    .yellow p{
+        font-size: 19px;
+        letter-spacing: 5px;
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .do_u_wanna_know{
+        font-size: 8px;
+    }
+    .stars {
+        display: flex;
+        justify-content: center;
+    }
+    .stars :last-of-type{
+        margin-top: 9vw;
+    }
+    .verdict p{
+        font-size: 18px;
+        padding-right: 16vw;
+        text-align: center;
+    }
+    .variants{
+        font-size: 35px;
+    }
+    .variants p:first-of-type, .variants p:last-of-type {
+        font-size: 15px;
+    }
+    .variants a img {
+        width: 50px;
+    }
+    .variants {
+        padding-left: 20px;
+    }
+    .do_u_wanna_know p{
+        font-size: 0px;
+    }
+    .menutext2{
+        display: none;
+    }
+    .end
+    {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 550px){
+    .zvezdec{
+        margin: auto;
+    }
+    .variants p:first-of-type, .variants p:last-of-type {
+        font-size: 14px;
+    }
+    .yellow{
+        padding-right: 20px ;
+    }
+    .yellow p{
+        font-size: 21px;
+        letter-spacing: 4px;
+    }
+    .yellow img{
+        margin-top: -2%;
+    }
+    .yellow p:nth-child(1){                       /*звездец */
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .instructions{
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    .do_u_wanna_know p:first-child{
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+    .do_u_wanna_know p:last-child{
+        margin-top: 5%;
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+    .basementtext1 p{
+        font-size: 15px;
+    }
+    .texttext{
+        font-size: 10px;
+    }
+    .basementtext1{
+        margin-left: -2%;
+    }
+    .basementtext1 p{
+        font-size: 11px;
+    }
+    .basementtext2{
+        padding: 15px;
+        margin-right: -5%;
+    }
+    .texttext{
+        font-size: 9px;
+    }
+    .end{
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+}

@@ -1,0 +1,1165 @@
+@font-face{
+    font-family: 'Donpoligrafbum-Bold';
+    src: url(./Donpoligrafbum-Bold.woff) format('woff'),
+         url(./Donpoligrafbum-Bold.woff2) format('woff2');
+}
+@font-face{
+    font-family: 'Mikar';
+    src: url(./Mikar.woff) format('woff'),
+         url(./Mikar.woff2) format('woff2');
+}
+p{
+    margin: 0px;
+    padding: 0;
+}
+body{
+    display: block;
+    margin: auto;
+}
+#block1, #block2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+#block1{
+    background-image: url("Фон2.jpg");
+    margin: auto;
+}
+#block2{
+    background: linear-gradient(to top, #000000, #2A1B3D);
+    opacity: 0.9; /*мб отредактировать*/
+    margin: auto;
+}
+header{
+    color: white;
+}
+.main{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.menutext3{
+    display: none;
+}
+.menutext{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    position: relative;
+    margin-top: 2%;
+    margin-left: -3%;
+}
+.zvezdec{
+    font-family: 'Donpoligrafbum-Bold';
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    background-color: rgba(30, 20, 44, 0.5);
+}
+.menutext2{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menutext2 p{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 1%;
+    background-color: rgba(30, 20, 44, 0.7);
+    border-radius: 20px;
+    margin-bottom: 1%;
+}
+.menutext2 p:nth-of-type(1){
+    padding-left: 4.7vw;
+    padding-right: 4.7vw;
+}
+.menutext2 p:nth-of-type(2){
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    color: #FAF68E;
+}
+.menutext2 p:nth-of-type(3){
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.menutext2 p:nth-of-type(1), .menutext2 p:nth-of-type(2){
+    margin-right: 5vw;
+}
+.c{
+    text-decoration: none;
+    color: white;
+}
+.menutext2 :hover{
+    background-color: whitesmoke;
+    color:#2A1B3D;
+    border-radius: 50px;
+}
+.yellow{
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    margin-top: 7%;
+}
+.yellow p{
+    font-size: 100px;
+    font-family: 'Donpoligrafbum-Bold';
+    color: #FAF68E;
+    letter-spacing: 25px;
+}
+.yellow img{
+    max-width: 10%;
+    margin-top: -1%;
+    margin-left: auto;
+    margin-right: 0;
+}
+.who{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+}
+.who p:first-child{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+.who p:last-child{
+    text-align: center;
+    margin-top: 3%;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 2.5vw;
+    font-size: 20px;
+}
+.whoisit{
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    margin-top: 4%;
+}
+.whoisit img{
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: 0;
+}
+.whoisittext{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(69, 54, 78, 0.5);
+    width: 70%;
+    border-radius: 15px;
+}
+.whoisittext p:first-child{
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 10px;
+    padding-left: 10px;
+}
+.whoisittext p:last-child{
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 5%;
+    line-height: 2vw;
+    letter-spacing: 5px;
+    padding-left: 10px;
+}
+.p1{
+    text-align: right;
+    z-index: 10;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.border{
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}
+.one, .two, .three, .four{
+    width: 250px;
+    height: 300px;
+    background:
+    linear-gradient(to right, #FAF68E 4px, transparent 4px) 0 0,
+    linear-gradient(to right, #FAF68E 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #FAF68E 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, #FAF68E 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, #FAF68E 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, #FAF68E 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #FAF68E 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, #FAF68E 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+.one, .two, .three{
+    margin-right: 10vw;
+}
+.four{
+    margin-left: auto;
+    margin-right: 0;
+}
+.one, .two, .three, .four{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.one p:first-child{
+    font-family: "Segoe Print";
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5%;
+}
+.one p:last-child{
+    font-family: "Segoe Print";
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15%;
+}
+.two p{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20%;
+    font-size: 20px;
+    font-family: "Segoe Print";
+}
+.three p{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10%;
+    font-size: 20px;
+    font-family: "Segoe Print";
+}
+.four p{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20%;
+    font-size: 20px;
+    font-family: "Segoe Print";
+}
+.img2, .img3{
+    position: absolute;
+    top: 5%;
+    left: 17.5%;
+}
+.img2 img, .img3 img{
+    max-width: 80%;
+}
+.img4{
+    position: absolute;
+    top: 5%;
+    left: 37%;
+}
+.img4 img{
+    max-width: 55%;
+}
+.history{
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.history img{
+    max-width: 20%;
+}
+.historytext{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(69, 54, 78, 0.5);
+    width: 70%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
+}
+.historytext p:first-child{
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 10px;
+    padding-left: 10px;
+}
+.historytext p:last-child{
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 5%;
+    line-height: 2vw;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    word-break: break-all;
+}
+.constellation{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 5%;
+}
+.constellationtext{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+.constellationtext p{
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+.constellationtext ul{
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 1.5vw;
+    font-size: 16px;
+}
+.img5{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+.constellation2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 2vw;
+}
+.constellation2 p:first-child{
+    background-color: rgba(69, 54, 78, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    max-width: 50%;
+}
+.constellation2 p:last-child{
+    margin-left: auto;
+    margin-right: 0;
+    background-color: rgba(69, 54, 78, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    padding-top: 40px;
+    max-width: 50%;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    margin-bottom: 5%;
+}
+.p2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 10px;
+    margin-bottom: 5%;
+}
+.people2{
+    display: flex;
+    flex-direction: row;
+}
+.peopleone, .peoplethree, .peoplefive{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(69, 54, 78, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 26%;
+}
+.peoplefive{
+    margin-left: auto;
+    margin-right: 0;
+}
+.peopleone, .peoplethree{
+    margin-right: 6.5%;
+}
+.peopleone img, .peoplethree img, .peoplefive img{
+    max-width: 50%;
+    margin: auto;
+    margin-top: 0%;
+    margin-bottom: 15%;
+}
+.peopletwo, .peoplefour, .peoplesix{
+    display: flex;
+    flex-direction: column;
+}
+.peopletwo p:first-child, .peoplefour p:first-child, .peoplesix p:first-child{
+    font-family: 'Donpoligrafbum-Bold';
+    color: #FAF68E;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15%;
+}
+.peopletwo p:last-child, .peoplefour p:last-child, .peoplesix p:last-child{
+    font-family: "Segoe Print";
+    text-align: center;
+    margin-bottom: 0%;
+}
+.after{
+    display: none;
+}
+.basement{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(69, 54, 78, 0.8);
+    z-index: 10;
+    margin-left: -6%;
+    margin-right: -6%;
+    padding: 40px;
+}
+.basement2{
+    display: flex;
+    flex-direction: row;
+}
+.basementtext1{
+    margin: auto;
+    margin-left: 2%;
+}
+.basementtext1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.basementtext1 p:last-child, .basementtext1 p:nth-of-type(2){
+    margin-top: 5%;
+}
+.basementtext2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: 2%;
+    max-width: 50%;
+}
+.texttext{
+    white-space: nowrap;
+    margin: auto;
+    font-size: 20px;
+    margin-right: 10%;
+}
+.texttext p:first-child{
+    margin-bottom: 10%;
+}
+.icon{
+    font-size: 3vw;
+    margin: auto;
+}
+.b, .b:active, .b:hover, .b:visited{
+    text-decoration:none;
+    color: white;
+    padding-right: 20px;
+}
+.end{
+    text-align: center;
+    font-family: 'Donpoligrafbum-Bold';
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: rgba(30, 20, 44, 0.5);
+}
+@media(max-width: 1350px){
+    .yellow p{
+        font-size: 90px;
+        letter-spacing: 20px;
+    }
+    .who p:first-child{
+        font-size: 40px;
+    }
+    .who p:last-child{
+        font-size: 15px;
+    }
+    .img5 img{
+        max-width: 90%;
+    }
+    .constellation2 p:last-child{
+        padding-top: 37.5px;
+    }
+    .end{
+        font-size: 19px;
+    }
+}
+@media(max-width: 1220px){
+    .yellow p{
+        font-size: 80px;
+        letter-spacing: 20px;
+    }
+    .menutext2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .zvezdec{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .menutext2 p{
+        border-radius: 10px;
+        text-align: center;
+    }
+    .menutext2 p:nth-of-type(1){
+        width: 62%;
+    }
+    .menutext2 p:nth-of-type(2){
+        width: 55.5%;
+    }
+    .whoisittext p:first-child, .historytext p:first-child{
+        font-size: 60px;
+    }
+    .whoisittext p:last-child, .historytext p:last-child{
+        font-size: 16px;
+    }
+    .p1{
+        font-size: 60px;
+    }
+    .one p:first-child{
+        margin-top: 10%;
+    }
+    .one p:last-child{
+        margin-top: 20%;
+    }
+    .img2, .img3, .img4{
+        top: 10%;
+    }
+    .constellationtext p{
+        font-size: 60px;
+    }
+    .constellationtext ul{
+        font-size: 15px;
+    }
+    .img5{
+        left: 37.5%;
+    }
+    .img5 img{
+        max-width: 80%;
+    }
+    .constellation2{
+        margin-top: 18%;
+        font-size: 15px;
+    }
+    .constellation2 p:last-child{
+        padding-top: 35px;
+    }
+    .p2{
+        font-size: 60px;
+    }
+    .basementtext1 p{
+        font-size: 22.5px;
+    }
+    .texttext{
+        font-size: 17.5px;
+    }
+    .end{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1100px){
+    .yellow p{
+        font-size: 70px;
+        letter-spacing: 20px;
+    }
+    .who p:first-child{
+        font-size: 30px;
+    }
+    .who p:last-child{
+        font-size: 12.5px;
+    }
+    .one, .two, .three, .four{
+        width: 200px;
+        height: 250px;
+    }
+    .one p:first-child{
+        font-size: 35px;
+        margin-top: 5%;
+    }
+    .one p:last-child{
+        margin-top: 10%;
+        font-size: 17.5px;
+    }
+    .two p, .four p{
+        margin-bottom: 25%;
+    }
+    .three p{
+        margin-bottom: 15%;
+    }
+    .two p, .three p, .four p{
+        font-size: 17.5px;
+    }
+    .img2, .img3{
+        top: 7.5%;
+        left: 25%;
+    }
+    .img4{
+        top: 7.5%;
+    }
+    .img2 img, .img3 img{
+        max-width: 70%;
+    }
+    .img4 img{
+        max-width: 45%;
+    }
+    .img5{
+        top: 22.5%;
+        left: 42.5%;
+    }
+    .img5 img{
+        max-width: 70%;
+    }
+    .constellation2 p:last-child{
+        padding-top: 32.5px;
+    }
+    .basementtext1 p{
+        font-size: 20px;
+    }
+    .texttext{
+        font-size: 15px;
+    }
+    .end{
+        font-size: 17px;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 4%;
+    }
+}
+@media(max-width:980px){
+    .yellow p{
+        font-size: 60px;
+        letter-spacing: 20px;
+    }
+    .p1{
+        font-size: 50px;
+        letter-spacing: 8px;
+    }
+    .whoisittext p:first-child, .historytext p:first-child, .constellationtext p{
+        font-size: 50px;
+    }
+    .whoisittext p:last-child, .historytext p:last-child{
+        font-size: 12px;
+    }
+    .one p:last-child{
+        margin-top: 15%;
+    }
+    .constellationtext ul{
+        letter-spacing: 2.5px;
+        line-height: 1.75vw;
+        font-size: 14px;
+    }
+    .img5{
+        top: 25%;
+        left: 37.5%;
+    }
+    .img5 img{
+        max-width: 60%;
+    }
+    .constellation2{
+        margin-top: 16%;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+    .constellation2 p:last-child{
+        padding-top: 30px;
+    }
+    .p2{
+        font-size: 50px;
+        letter-spacing: 8px;
+    }
+    .peopletwo p:first-child, .peoplefour p:first-child, .peoplesix p:first-child{
+        font-size: 16.5px;
+    }
+    .peopletwo p:last-child, .peoplefour p:last-child, .peoplesix p:last-child{
+        font-size: 13px;
+    }
+    .end{
+        font-size: 15px;
+    }
+    .menutext2 p{
+        font-size: 22px;
+    }
+}
+@media(max-width: 860px){
+    .yellow p{
+        font-size: 50px;
+        letter-spacing: 20px;
+    }
+    .menutext2 p:nth-of-type(1){
+        width: 68%;
+    }
+    .menutext2 p:nth-of-type(2){
+        width: 62%;
+    }
+    .who p:first-child{
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+    .who p:last-child{
+        font-size: 10px;
+        margin-bottom: 2%;
+    }
+    .whoisittext p:first-child, .historytext p:first-child{
+        font-size: 40px;
+    }
+    .whoisittext p:last-child, .historytext p:last-child{
+        font-size: 9px;
+    }
+    .p1{
+        font-size: 40px;
+    }
+    .one, .two, .three, .four{
+        width: 150px;
+        height: 200px;
+        background:
+        linear-gradient(to right, #FAF68E 4px, transparent 4px) 0 0,
+        linear-gradient(to right, #FAF68E 4px, transparent 4px) 0 100%,
+        linear-gradient(to left, #FAF68E 4px, transparent 4px) 100% 0,
+        linear-gradient(to left, #FAF68E 4px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom, #FAF68E 4px, transparent 4px) 0 0,
+        linear-gradient(to bottom, #FAF68E 4px, transparent 4px) 100% 0,
+        linear-gradient(to top, #FAF68E 4px, transparent 4px) 0 100%,
+        linear-gradient(to top, #FAF68E 4px, transparent 4px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+    }
+    .one p:first-child{
+        font-size: 27.5px;
+    }
+    .one p:last-child{
+        margin-top: 12.5%;
+        font-size: 15px;
+    }
+    .two p, .three p, .four p{
+        font-size: 15px;
+    }
+    .img5{
+        top: 25%;
+        left: 40%;
+    }
+    .constellation2 p:last-child{
+        padding-top: 27.5px;
+    }
+    .constellationtext p{
+        font-size: 40px;
+    }
+    .constellation2{
+        font-size: 12px;
+    }
+    .p2{
+        font-size: 40px;
+    }
+    .peopletwo p:first-child, .peoplefour p:first-child, .peoplesix p:first-child{
+        font-size: 13px;
+    }
+    .peopletwo p:last-child, .peoplefour p:last-child, .peoplesix p:last-child{
+        font-size: 11px;
+    }
+    .basementtext1 p{
+        font-size: 17.5px;
+    }
+    .texttext{
+        font-size: 12.5px;
+    }
+    .end{
+        margin-top: 5%;
+    }
+    .zvezdec{
+        font-size: 18px;
+    }
+    .menutext2 p{
+        font-size: 20px;
+    }
+    .menutext2 p:nth-of-type(1){
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .menutext2 p:nth-of-type(2){
+        padding-left: 4.7vw;
+        padding-right: 4.7vw;
+    }
+}
+@media(max-width: 740px){
+    .yellow p{
+        font-size: 40px;
+        letter-spacing: 20px;
+    }
+    .whoisit{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .history{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .whoisit img{
+        margin: auto;
+        max-width: 30%;
+        margin-bottom: 5%;
+    }
+    .history img{
+        margin: auto;
+        max-width: 30%;
+        margin-top: 5%;
+    }
+    .whoisittext, .historytext{
+        width: 70%;
+        border-radius: 15px;
+        margin: auto;
+    }
+    .whoisittext p:first-child, .historytext p:first-child{
+        font-size: 30px;
+        letter-spacing: 7px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .whoisittext p:last-child, .historytext p:last-child{
+        font-size: 9px;
+        letter-spacing: 3px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .p1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .one p:first-child{
+        font-size: 25px;
+        margin-top: 5%;
+    }
+    .one p:last-child{
+        margin-top: 22.5%;
+    }
+    .two p, .four p{
+        margin-bottom: 30%;
+    }
+    .three p{
+        margin-bottom: 25%;
+    }
+    .img2, .img3{
+        top: 10%;
+        left: 25%;
+    }
+    .img4{
+        top: 10%;
+    }
+    .constellationtext p{
+        font-size: 30px;
+        letter-spacing: 7px;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .constellationtext ul{
+        letter-spacing: 2   px;
+        line-height: 2.5vw;
+        font-size: 12px;
+        margin-left: -7%;
+        text-align: center;
+    }
+    .constellationtext ul li{
+        list-style-position: inside;
+    }
+    .img5{
+        top: 35%;
+        left: 35%;
+    }
+    .img5 img{
+        max-width: 60%;
+    }
+    .constellation2{
+        margin-top: 35%;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        line-height: 2.25vw;
+    }
+    .constellation2 p:last-child{
+        padding-top: 25px;
+    }
+    .p2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .people2{
+        flex-direction: column;
+    }
+    .peopleone{
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    .peoplethree, .peoplefive{
+        display: none;
+    }
+    .after{
+        display: flex;
+        flex-direction: row;
+    }
+    .after .peoplethree, .after .peoplefive{
+        display: block;
+    }
+    .after .peoplethree img, .after .peoplefive img{
+        margin-left: 25%;
+    }
+    .end{
+        font-size: 12px;
+    }
+    .zvezdec{
+        font-size: 16px;
+    }
+    .menutext2 p{
+        font-size: 18px;
+    }
+    .menutext2 p:nth-of-type(2){
+        padding-left: 4.8vw;
+        padding-right: 4.8vw;
+    }
+}
+@media(max-width: 620px){
+    .yellow p{
+        font-size: 30px;
+        letter-spacing: 20px;
+    }
+    .who p:first-child{
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .who p:last-child{
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+    .whoisittext p:first-child, .historytext p:first-child{
+        font-size: 25px;
+    }
+    .whoisittext p:last-child, .historytext p:last-child{
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+    .p1{
+        font-size: 22.5px;
+    }
+    .one, .two, .three, .four{
+        width: 100px;
+        height: 150px;
+        background:
+        linear-gradient(to right, #FAF68E 3px, transparent 3px) 0 0,
+        linear-gradient(to right, #FAF68E 3px, transparent 3px) 0 100%,
+        linear-gradient(to left, #FAF68E 3px, transparent 3px) 100% 0,
+        linear-gradient(to left, #FAF68E 3px, transparent 3px) 100% 100%,
+        linear-gradient(to bottom, #FAF68E 3px, transparent 3px) 0 0,
+        linear-gradient(to bottom, #FAF68E 3px, transparent 3px) 100% 0,
+        linear-gradient(to top, #FAF68E 3px, transparent 3px) 0 100%,
+        linear-gradient(to top, #FAF68E 3px, transparent 3px) 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    .one, .two, .three{
+        margin-right: 7vw;
+    }
+    .one p:first-child{
+        font-size: 22px;
+    }
+    .one p:last-child{
+        margin-top: 7.5%;
+        font-size: 13px;
+    }
+    .two p, .four p{
+        margin-bottom: 25%;
+    }
+    .three p{
+        margin-bottom: 15%;
+    }
+    .two p, .three p, .four p{
+        font-size: 13px;
+    }
+    .img2, .img3{
+        top: 10%;
+        left: 25%;
+    }
+    .img4{
+        top: 10%;
+    }
+    .img2 img, .img3 img{
+        max-width: 70%;
+    }
+    .img4 img{
+        max-width: 40%;
+    }
+    .constellationtext p{
+        font-size: 25px;
+    }
+    .constellation2{
+        font-size: 10px;
+        line-height: 2.5vw;
+    }
+    .p2{
+        font-size: 22.5px;
+    }
+    .peopleone, .peoplethree, .peoplefive{
+        max-width: 30%;
+    }
+    .basementtext1 p{
+        font-size: 15px;
+    }
+    .texttext{
+        font-size: 10px;
+    }
+    .end{
+        font-size: 10px;
+    }
+    .zvezdec{
+        font-size: 14px;
+    }
+    .menutext2{
+        padding: 7.5px;
+    }
+    .menutext2 p{
+        font-size: 16px;
+    }
+}
+@media(max-width: 550px){
+    .yellow p{
+        font-size: 23px;
+        letter-spacing: 20px;
+    }
+    .yellow img{
+        margin-top: -2%;
+    }
+    .who p:first-child{
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+    .who p:last-child{
+        margin-top: 5%;
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+    .whoisittext p:first-child, .historytext p:first-child{
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    .whoisittext p:last-child, .historytext p:last-child{
+        font-size: 6.5px;
+        letter-spacing: 3px;
+        line-height: 2.5vw;
+    }
+    .p1{
+        font-size: 15px;
+    }
+    .one p:first-child{
+        font-size: 20px;
+    }
+    .one p:last-child{
+        margin-top: 12.5%;
+    }
+    .two p, .four p{
+        margin-bottom: 30%;
+    }
+    .two p, .three p, .four p{
+        font-size: 12px;
+    }
+    
+    .constellationtext p{
+        font-size: 20px;
+        letter-spacing: 7px;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .constellation2 p:first-child{
+        text-align: center;
+        max-width: 40%;
+    }
+    .constellation2 p:last-child{
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 40%;
+    }
+    .constellationtext ul{
+        letter-spacing: 2px;
+        line-height: 2.5vw;
+    }
+    .constellationtext ul li{
+        list-style-position: inside;
+    }
+    .img5{
+        top: 27.5%;
+        left: 27.5%;
+    }
+    .img5 img{
+        max-width: 60%;
+    }
+    .constellation2{
+        margin-top: 35%;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        line-height: 3vw;
+    }
+    .p2{
+        font-size: 15px;
+    }
+    .peopletwo p:first-child, .peoplefour p:first-child, .peoplesix p:first-child{
+        font-size: 10.8px;
+    }
+    .peopletwo p:last-child, .peoplefour p:last-child, .peoplesix p:last-child{
+        font-size: 9.8px;
+    }
+    .basementtext1{
+        margin-left: -2%;
+    }
+    .basementtext1 p{
+        font-size: 13px;
+    }
+    .basementtext2{
+        padding: 15px;
+        margin-right: -5%;
+    }
+    .texttext{
+        font-size: 9.5px;
+    }
+    .end{
+        margin-top: 10%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .zvezdec{
+        font-size: 12px;
+    }
+    .menutext2{
+        padding: 7.5px;
+    }
+    .menutext2 p{
+        font-size: 14px;
+    }
+    .menutext2 p:nth-of-type(1){
+        padding-left: 4.5vw;
+        padding-right: 4.5vw;
+    }
+    .menutext2 p:nth-of-type(2){
+        padding-left: 5.4vw;
+        padding-right: 5.4vw;
+    }
+} 
+

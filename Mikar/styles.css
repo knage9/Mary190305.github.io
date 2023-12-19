@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Mikar';
+  src: url(./Mikar.woff) format('woff'),
+       url(./Mikar.woff2) format('woff2');
+}
